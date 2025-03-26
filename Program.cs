@@ -407,36 +407,90 @@
 
 
 // Method Overriding
-using System;
-namespace methodOverriding
-{
+//using System;
+//namespace methodOverriding
+//{
 
-    class A
-    {
-        public virtual void show()
-        {
-            Console.WriteLine("Class A");
-        }
-    }
+//    class A
+//    {
+//        public virtual void show()
+//        {
+//            Console.WriteLine("Class A");
+//        }
+//    }
 
-    class B : A
-    {
-        public override void show()
-        {
-            Console.WriteLine("class B");
-        }
-    }
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            A a = new A();
-            a.show();
+//    class B : A
+//    {
+//        public override void show()
+//        {
+//            Console.WriteLine("class B");
+//        }
+//    }
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            A a = new A();
+//            a.show();
 
-            B b = new B();
-            b.show();
+//            B b = new B();
+//            b.show();
 
-            
-        }
-    }
-}
+
+//        }
+//    }
+//}
+
+// Abstract Class
+//namespace AbstractProject
+//{
+//    abstract class AbsParent
+//    {
+//        public abstract void Add(int x, int y);
+//    }
+
+//    class AbsChild : AbsParent
+//    {
+//        public override void  Add(int x, int y)
+//        {
+//            Console.WriteLine(x + y);
+//        }
+//    }
+//    class Program
+//    {
+//        public static void Main(string[] args)
+//        {
+//            AbsParent obj = new AbsChild();
+//            obj.Add(1, 2);
+//        }
+//    }
+//}
+
+//Properties in C#
+//using System;
+//namespace properties
+//{
+
+//    class Person
+//    {
+//        private string name;
+//        public string Name
+//        {
+//            get { return name; }
+//            set { name = value; }
+//        }
+
+//    }
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Person p = new Person();
+//            p.Name = "Akshay";
+//            Console.WriteLine(p.Name);
+//        }
+//    }
+//}
+
+
+
