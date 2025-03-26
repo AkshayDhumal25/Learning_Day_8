@@ -492,5 +492,29 @@
 //    }
 //}
 
+//Diamond Problem
+using System;
+using System.Runtime.InteropServices;
+interface A
+{
+    static void print()
+    {
+        Console.WriteLine("Hello World");
+    }
+}
 
+interface B : A
+{
 
+}
+interface C : A
+{
+
+}
+class D : B, C
+{
+    public static void Main()
+    {
+        A.print();
+    }
+}
